@@ -8,14 +8,14 @@ const Main = () => {
   return (
     <div className='w-full min-h-screen flex items-center justify-center flex-col'>
       {/* Photo */}
-      <div className='mb-6'>
+      <div className='mb-4'>
         <Image src={"/image/profile-pic.png"} height={"150"} width={"150"} alt='Home image' />
       </div>
-      <div className='mb-8'>
-        <p className='text-3xl lg:max-w-3xl text-[#312B22] lg:text-7xl font-extrabold tracking-tighter text-center'>Software Developer<spam className="animate-pulse z-0">_</spam></p>
+      <div className='mb-6'>
+        <p className='text-3xl lg:max-w-3xl text-[#312B22] lg:text-6xl font-extrabold tracking-tighter text-center'>Software Developer<spam className="animate-pulse z-0">_</spam></p>
       </div>
       <div >
-        <p className='text-[#312B22] max-w-sm lg:max-w-3xl text-center lg:text-2xl tracking-tighter'>{about}</p>
+        <p className='text-[#312B22] max-w-xs lg:max-w-3xl text-center lg:text-xl tracking-tighter'>{about}</p>
       </div>
     </div>
   )

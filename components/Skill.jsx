@@ -77,10 +77,10 @@ const Skill = () => {
 
   return (
     <div id='skill' className='w-full min-h-screen flex items-center justify-center flex-col'>
-      <p className='w-sm lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Skill</p>
+      <p className='w-xs lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Skill</p>
 
       {/* Programming Languages */}
-      <div className='w-sm lg:w-5xl mb-4'>
+      <div className='w-xs lg:w-5xl mb-4'>
         <p className='inline-block border-b border-black/10 pb-1 mb-2'>Programming Languages</p>
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {languages?.map((langIcon, index) => (
@@ -96,7 +96,7 @@ const Skill = () => {
 
 
       {/* Programming Languages */}
-      <div className='w-sm lg:w-5xl mb-4'>
+      <div className='w-xs lg:w-5xl mb-4'>
         <p className='inline-block border-b border-black/10 pb-1 mb-2'>Frameworks & Libraries</p>
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {frameworks?.map((icon, index) => (
@@ -112,7 +112,7 @@ const Skill = () => {
 
 
       {/* Database */}
-      <div className='w-sm lg:w-5xl mb-4'>
+      <div className='w-xs lg:w-5xl mb-4'>
         <p className='inline-block border-b border-black/10 pb-1 mb-2'>Databases</p>
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {database?.map((icon, index) => (
@@ -128,8 +128,8 @@ const Skill = () => {
 
 
       {/* Cloud & devOps */}
-      <div className='w-sm lg:w-5xl mb-4'>
-        <p className='inline-block border-b border-black/10 pb-1 mb-2'>Databases</p>
+      <div className='w-xs lg:w-5xl mb-4'>
+        <p className='inline-block border-b border-black/10 pb-1 mb-2'>Cloud & DevOps</p>
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {cloud?.map((icon, index) => (
             (

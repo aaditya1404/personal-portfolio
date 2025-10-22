@@ -3,7 +3,7 @@ import { FiHome } from "react-icons/fi";
 
 const Navbar = () => {
     return (
-        <div className="flex w-full backdrop-blur-sm fixed items-center justify-center gap-4 h-20 lg:h-24 border-b border-black/10">
+        <div className="flex w-full backdrop-blur-sm fixed items-center justify-center gap-4 h-20 lg:h-20 border-b border-black/10">
             <Link href={"/#work"} className="cursor-pointer translate-x-4">Work</Link>
             <Link href={"/#skill"} className="cursor-pointer translate-x-4">Skill</Link>
             <div className="translate-x-4">
