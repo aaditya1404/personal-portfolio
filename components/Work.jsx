@@ -1,20 +1,21 @@
+"use client";
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import SmartPhoneFrame from './SmartPhoneFrame';
 
 const Work = () => {
 
-    const work = [
+    const [demoUrl, setDemoUrl] = useState(null);
+
+    const project = [
         {
-            name: "College Bucket",
-            desc: "Market place for students to buy, sell, and trade items within their campus network. Designed a RESTful backend along with real-time search and filtering.",
-            tech: "MERN, JWT, Tailwind CSS, Three.js",
-            src: "/project/collegebucket"
+            title: "College Bucket",
+            demo: "https://collegebucket.vercel.app/"
         },
         {
-            name: "Mystery Message",
-            desc: "Anonymous feedback platform enables users to send and receive true feedback and messages. Integrated Gemini AI to generate personalized responses, and verified user onboarding using NextAuth and email verification.",
-            tech: "Next.js, React Email, Gemini AI"
+            title: "Mystery Message",
+            demo: "https://mysterymessage-lovat.vercel.app/"
         }
     ]
 
@@ -33,7 +34,7 @@ const Work = () => {
                     <p className='text-black/70 mb-4'>Tech Used: MERN, JWT, Tailwind CSS, Three.js</p>
                     <div className='flex gap-2'>
                         <Link href={"https://github.com/aaditya1404/collegebucket"}>Github</Link>
-                        <Link href={"/"}>Demo</Link>
+                        <button className='cursor-pointer' onClick={()=>setDemoUrl("https://collegebucket.vercel.app/")}>Demo</button>
                     </div>
                 </div>
             </div>
@@ -49,13 +50,16 @@ const Work = () => {
                     <p className='text-black/70 mb-4'>Tech Used: Next.js, MongoDB, Zod, Typescript, Nodemailer, React Email, Gemini AI</p>
                     <div className='flex gap-2'>
                         <Link href={"https://github.com/aaditya1404/mstrymsg"}>Github</Link>
-                        <Link href={"/"}>Demo</Link>
+                        <button className='cursor-pointer' onClick={()=>setDemoUrl("https://mysterymessage-lovat.vercel.app/")}>Demo</button>
                     </div>
                 </div>
                 <div className='rounded-md overflow-hidden hidden lg:block lg:w-2xl'>
                     <Image src={"/project/mysterymessage.png"} width={400} height={400} alt='project' />
                 </div>
             </div>
+            {demoUrl && (
+                <SmartPhoneFrame src={demoUrl} onClose={()=>setDemoUrl(null)} />
+            )}
         </div>
     )
 }
