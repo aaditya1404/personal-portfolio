@@ -85,7 +85,7 @@ const Skill = () => {
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {languages?.map((langIcon, index) => (
             (
-              <div key={index} className='w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500'>
+              <div key={index} className='w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
                 <Image src={langIcon.src} width={50} height={50} alt='icon' />
                 <p className='font-bold tex-sm lg:text-2xl'>{langIcon.name}</p>
               </div>
@@ -101,7 +101,7 @@ const Skill = () => {
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {frameworks?.map((icon, index) => (
             (
-              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500'>
+              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
                 <Image src={icon.src} width={50} height={50} alt='icon' />
                 <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
               </div>
@@ -117,7 +117,7 @@ const Skill = () => {
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {database?.map((icon, index) => (
             (
-              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500'>
+              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
                 <Image src={icon.src} width={50} height={50} alt='icon' />
                 <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
               </div>
@@ -133,7 +133,7 @@ const Skill = () => {
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           {cloud?.map((icon, index) => (
             (
-              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500'>
+              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
                 <Image src={icon.src} width={50} height={50} alt='icon' />
                 <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
               </div>
