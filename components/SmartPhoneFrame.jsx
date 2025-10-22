@@ -4,7 +4,7 @@ const SmartPhoneFrame = ({ src, onClose }) => {
     return (
         <div className='fixed inset-0 bg-black/70 flex items-center justify-center z-50'>
             <button
-                className='absolute top-0 cursor-pointer right-4 text-white text-lg font-bold'
+                className='absolute top-0 cursor-pointer right-4 text-white text-lg font-bold z-50'
                 onClick={onClose}
             >
                 Back
