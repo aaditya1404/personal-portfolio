@@ -20,14 +20,14 @@ const Footer = () => {
                 <div className='flex flex-col lg:flex-row lg:gap-4'>
                     <Link
                         href={"https://github.com/aaditya1404"}
-                        className='hover:underline flex items-center justify-center gap-1'
+                        className='hover:underline flex items-center justify-start gap-1'
                     >
                         Github
                         <FaArrowTrendUp />
                     </Link>
                     <Link
                         href={"https://www.linkedin.com/in/aaditya1404/"}
-                        className='hover:underline flex items-center justify-center gap-1'
+                        className='hover:underline flex items-center justify-start gap-1'
                     >
                         LinkedIn
                         <FaArrowTrendUp />
@@ -37,14 +37,14 @@ const Footer = () => {
                     <Link
                         href={"/resume/resume.pdf"}
                         download={"Aaditya_Resume.pdf"}
-                        className='hover:underline flex items-center justify-center gap-1'
+                        className='hover:underline flex items-center justify-start gap-1'
                     >
                         Resume
                         <FaArrowTrendUp />
                     </Link>
                     <Link
                         href="mailto:aadityakumarvishwakarma31@gmail.com?subject=Hello%20Aaditya&body=Hi%20Aaditya,"
-                        className="hover:underline flex items-center justify-center gap-1"
+                        className="hover:underline flex items-center justify-start gap-1"
                     >
                         Email Me
                         <FaArrowTrendUp />
