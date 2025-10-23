@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import FollowPointer from "@/components/FollowPointer";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,10 +31,12 @@ export default function RootLayout({ children }) {
       <body
         className={poppins.className}
       >
+
         <Navbar />
         <ScrollProgressBar />
         <FollowPointer />
-        {children}
+          {children}
+        <Footer />
       </body>
     </html>
   );
