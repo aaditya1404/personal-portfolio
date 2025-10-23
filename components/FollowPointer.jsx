@@ -107,6 +107,7 @@ export default function DynamicCursor() {
           borderRadius: 12, // keep slightly rounded
         }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        // className="bg-[#f2e6c1]"
         className="bg-[#f2e6c1]"
       />
     </motion.div>

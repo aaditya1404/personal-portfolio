@@ -6,11 +6,11 @@ const Navbar = () => {
         <div className="flex w-full backdrop-blur-sm fixed items-center justify-center gap-4 h-18 lg:h-18 border-b border-black/10 z-10">
             <Link href={"/#work"} className="cursor-pointer translate-x-4 py-7">Work</Link>
             <Link href={"/#skill"} className="cursor-pointer translate-x-4 py-7">Skill</Link>
-            <div className="translate-x-4">
+            <Link href={"/#main"} className="translate-x-4">
                 <FiHome className="text-2xl cursor-pointer"/>
-            </div>
-            <p className="cursor-pointer translate-x-4 py-7">About</p>
-            <p className="cursor-pointer translate-x-4 py-7">Contact</p>
+            </Link>
+            <Link href={"/about"} className="cursor-pointer translate-x-4 py-7">About</Link>
+            <Link href={"/#experince"} className="cursor-pointer translate-x-4 py-7">Exp</Link>
         </div>
     )
 }

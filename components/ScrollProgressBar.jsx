@@ -11,8 +11,8 @@ export default function ScrollProgressBar() {
 
     return (
         <motion.div
-            // className="fixed top-18 left-0 right-0 h-2 bg-linear-to-r from-indigo-500 to-cyan-400 origin-left z-50"
-            className="fixed top-17 left-0 right-0 bg-[#fff7ca] h-1 bg-linear-to-r  origin-left z-50"
+            className="fixed top-17 left-0 right-0 h-1 bg-linear-to-r from-pink-400 to-pink-700 origin-left z-50"
+            // className="fixed top-17 left-0 right-0 bg-[#fff7ca] h-1 bg-linear-to-r  origin-left z-50"
             style={{ scaleX: smoothProgress }}
         />
     );

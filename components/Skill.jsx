@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import ScrollReveal from './ScrollReveal';
 
 const Skill = () => {
 
@@ -77,70 +78,80 @@ const Skill = () => {
 
   return (
     <div id='skill' className='w-full min-h-screen flex items-center justify-center flex-col'>
-      <p className='w-xs lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Skill</p>
+      <ScrollReveal>
+        <p className='w-xs lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Skill</p>
+      </ScrollReveal>
 
       {/* Programming Languages */}
-      <div className='w-xs lg:w-5xl mb-4'>
-        <p className='inline-block border-b border-black/10 pb-1 mb-2'>Programming Languages</p>
-        <div className='grid grid-cols-2 lg:grid-cols-4'>
-          {languages?.map((langIcon, index) => (
-            (
-              <div key={index} className='w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
-                <Image src={langIcon.src} width={50} height={50} alt='icon' />
-                <p className='font-bold tex-sm lg:text-2xl'>{langIcon.name}</p>
-              </div>
-            )
-          ))}
+      <ScrollReveal>
+        <div className='w-xs lg:w-5xl mb-4'>
+          <p className='inline-block border-b border-black/10 pb-1 mb-2'>Programming Languages</p>
+          <div className='grid grid-cols-2 lg:grid-cols-4'>
+            {languages?.map((langIcon, index) => (
+              (
+                <div key={index} className='w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
+                  <Image src={langIcon.src} width={50} height={50} alt='icon' />
+                  <p className='font-bold tex-sm lg:text-2xl'>{langIcon.name}</p>
+                </div>
+              )
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
 
 
       {/* Programming Languages */}
-      <div className='w-xs lg:w-5xl mb-4'>
-        <p className='inline-block border-b border-black/10 pb-1 mb-2'>Frameworks & Libraries</p>
-        <div className='grid grid-cols-2 lg:grid-cols-4'>
-          {frameworks?.map((icon, index) => (
-            (
-              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
-                <Image src={icon.src} width={50} height={50} alt='icon' />
-                <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
-              </div>
-            )
-          ))}
+      <ScrollReveal>
+        <div className='w-xs lg:w-5xl mb-4'>
+          <p className='inline-block border-b border-black/10 pb-1 mb-2'>Frameworks & Libraries</p>
+          <div className='grid grid-cols-2 lg:grid-cols-4'>
+            {frameworks?.map((icon, index) => (
+              (
+                <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
+                  <Image src={icon.src} width={50} height={50} alt='icon' />
+                  <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
+                </div>
+              )
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
 
 
       {/* Database */}
-      <div className='w-xs lg:w-5xl mb-4'>
-        <p className='inline-block border-b border-black/10 pb-1 mb-2'>Databases</p>
-        <div className='grid grid-cols-2 lg:grid-cols-4'>
-          {database?.map((icon, index) => (
-            (
-              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
-                <Image src={icon.src} width={50} height={50} alt='icon' />
-                <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
-              </div>
-            )
-          ))}
+      <ScrollReveal>
+        <div className='w-xs lg:w-5xl mb-4'>
+          <p className='inline-block border-b border-black/10 pb-1 mb-2'>Databases</p>
+          <div className='grid grid-cols-2 lg:grid-cols-4'>
+            {database?.map((icon, index) => (
+              (
+                <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
+                  <Image src={icon.src} width={50} height={50} alt='icon' />
+                  <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
+                </div>
+              )
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
 
 
       {/* Cloud & devOps */}
-      <div className='w-xs lg:w-5xl mb-4'>
-        <p className='inline-block border-b border-black/10 pb-1 mb-2'>Cloud & DevOps</p>
-        <div className='grid grid-cols-2 lg:grid-cols-4'>
-          {cloud?.map((icon, index) => (
-            (
-              <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
-                <Image src={icon.src} width={50} height={50} alt='icon' />
-                <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
-              </div>
-            )
-          ))}
+      <ScrollReveal>
+        <div className='w-xs lg:w-5xl mb-4'>
+          <p className='inline-block border-b border-black/10 pb-1 mb-2'>Cloud & DevOps</p>
+          <div className='grid grid-cols-2 lg:grid-cols-4'>
+            {cloud?.map((icon, index) => (
+              (
+                <div key={index} className=' w-full rounded-md px-2 py-2 flex items-center gap-4 hover:bg-[#fff7ca] duration-500 focus:bg-[#fff7ca]'>
+                  <Image src={icon.src} width={50} height={50} alt='icon' />
+                  <p className='font-bold text-sm lg:text-2xl'>{icon.name}</p>
+                </div>
+              )
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
     </div>
   )
 }
