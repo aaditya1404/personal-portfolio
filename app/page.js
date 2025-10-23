@@ -12,7 +12,8 @@ export default function Home() {
           <Work />
           <Skill />
       </main>
-      <div className="h-[90vh] bg-transparent -z-50">
+      {/* <div className="h-[90vh] bg-transparent -z-50"> */}
+      <div className="h-[calc(100vh-4.5rem)] bg-transparent -z-50">
       </div>
       <Footer />
     </div>
