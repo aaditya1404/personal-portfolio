@@ -4,7 +4,7 @@ import ScrollReveal from './ScrollReveal'
 
 const Experience = () => {
     return (
-        <div id='exp' className='w-full min-h-[70vh] flex items-center justify-center flex-col'>
+        <div id='exp' className='w-full min-h-[70vh] flex items-center justify-center flex-col '>
             <ScrollReveal>
                 <p className='w-xs lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Experience</p>
             </ScrollReveal>
