@@ -18,10 +18,10 @@ export default function About() {
                     <p className="text-center mb-2">{p3}</p>
                     <p className="text-center mb-2">{p4}</p>
                     <p className="text-center mb-4">{p5}</p>
-                    <div>
+                    <div className="mb-4">
                         <Link
                             href={"/"}
-                            className="bg-[#fff7ca] text-xl font-bold tracking-tighter px-4 py-2 rounded-md"
+                            className="bg-[#fff7ca] text-xl font-bold tracking-tighter px-4 py-2 rounded-md "
                         >Lets Connect :)</Link>
                     </div>
                 </div>
