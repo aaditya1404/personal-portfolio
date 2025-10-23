@@ -79,7 +79,7 @@ const Skill = () => {
   return (
     <div id='skill' className='w-full min-h-screen flex items-center justify-center flex-col'>
       <ScrollReveal>
-        <p className='w-xs lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Skill</p>
+        <p className='w-xs lg:w-5xl border-b border-black/10 text-black/70 text-3xl mb-8 mt-14 lg:mt-8'>Skills</p>
       </ScrollReveal>
 
       {/* Programming Languages */}
