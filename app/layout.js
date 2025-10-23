@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import ScrollProgressBar from "@/components/ScrollProgressBar";
+import FollowPointer from "@/components/FollowPointer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,8 @@ export default function RootLayout({ children }) {
         className={poppins.className}
       >
         <Navbar />
+        <ScrollProgressBar />
+        <FollowPointer />
         {children}
       </body>
     </html>

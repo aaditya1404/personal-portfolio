@@ -5,14 +5,15 @@ import Work from "@/components/Work";
 
 export default function Home() {
   return (
+
     <div className="relative">
       <main className="relative z-5 bg-[#FEFDF8]">
-        <Main />
-        <Work />
-        <Skill />
+          <Main />
+          <Work />
+          <Skill />
       </main>
-        <div className="h-[90vh] bg-transparent -z-50">
-        </div>
+      <div className="h-[90vh] bg-transparent -z-50">
+      </div>
       <Footer />
     </div>
   )
