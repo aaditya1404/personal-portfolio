@@ -92,7 +92,7 @@ export default function DynamicCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 z-[999] pointer-events-none mix-blend-difference"
+      className="fixed top-0 left-0 z-[999] pointer-events-none mix-blend-difference hidden lg:block"
       style={{
         x: springX,
         y: springY,
